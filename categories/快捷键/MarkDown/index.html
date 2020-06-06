@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/zy666/zy666.github.io">
-  <title>Android自定义View（一） | danny的博客</title>
+  <title>Category: MarkDown | danny的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本来想先介绍知识背景，又怕写着写着语无伦次。索性上来直奔主题，写一个小例子，记录探索过程。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Android自定义View（一）">
-<meta property="og:url" content="https://github.com/zy666/zy666.github.io/2017/06/03/Android%E8%87%AA%E5%AE%9A%E4%B9%89View%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="danny的博客">
+<meta property="og:url" content="https://github.com/zy666/zy666.github.io/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/MarkDown/index.html">
 <meta property="og:site_name" content="danny的博客">
-<meta property="og:description" content="本来想先介绍知识背景，又怕写着写着语无伦次。索性上来直奔主题，写一个小例子，记录探索过程。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2017-06-03T02:30:25.000Z">
-<meta property="article:modified_time" content="2020-06-06T06:51:29.308Z">
 <meta property="article:author" content="Danny">
-<meta property="article:tag" content="自定义控件">
+<meta property="article:tag" content="生活">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="danny的博客" type="application/atom+xml">
@@ -165,210 +161,73 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Android自定义View（一）"
-         class="article article-type-post " itemscope
-         itemprop="blogPost">
-    <div class="article-inner">
-        
-            <header class="article-header">
-                
+            
   
-    <h1 class="article-title" itemprop="name">
-      Android自定义View（一）
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/11/22/MarkDown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/" class="archive-article-date">
+  	<time datetime="2016-11-22T07:48:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/11/22/MarkDown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/">MarkDown语法手册</a>
     </h1>
   
 
-                
-                    <a href="/2017/06/03/Android%E8%87%AA%E5%AE%9A%E4%B9%89View%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2017-06-03T02:30:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-03</time>
-</a>
-                
-            </header>
-
-            <div align="center" class="post-count">
-                字数：61字 | 预计阅读时长：1分钟
-            </div>
-
-            <!-- 文章访问量 -->
-            
-                <span class="archive-article-date">
-               阅读量:		<span id="busuanzi_value_page_pv"></span>
-              </span>
-            
-
-        
-        <div class="article-entry" itemprop="articleBody">
-            
-                <p>本来想先介绍知识背景，又怕写着写着语无伦次。索性上来直奔主题，写一个小例子，记录探索过程。<a id="more"></a></p>
-<h1 id="本节内容主要内容"><a href="#本节内容主要内容" class="headerlink" title="本节内容主要内容"></a>本节内容主要内容</h1><ol>
-<li>onDraw()</li>
-<li>自定义属性</li>
-<li>onMeasue()方法</li>
-<li>测量换行</li>
-</ol>
-
-            
-
-            
-                <div class="page-reward">
-                    <a href="javascript:;" class="page-reward-btn tooltip-top">
-                        <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-                            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
-                              class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                      
-                      
-                  </div>
-                </span>
-              </span>
-            </span>
-                        </div>
-                    </a>
-                </div>
-            
-        </div>
-        <div class="article-info article-info-index">
-            
-            
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">自定义控件</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MarkDown语法 书写格式</a>
         		</li>
       		
 		</ul>
 	</div>
 
-            
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        			<a href="/categories/快捷键//" class="article-tag-list-link color4">快捷键</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/技术/Android//" class="article-tag-list-link color3">Android</a>
+        			<a href="/categories/快捷键/MarkDown//" class="article-tag-list-link color4">MarkDown</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-            
-
-            
-                
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
+        <div class="clearfix"></div>
+    </header>
   </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/zy666/zy666.github.io/2017/06/03/Android%E8%87%AA%E5%AE%9A%E4%B9%89View%EF%BC%88%E4%B8%80%EF%BC%89/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-            
-            <div class="clearfix"></div>
-        </div>
-    </div>
 </article>
-
-    
-<nav id="article-nav">
-  
-    <a href="/2017/06/10/android%E8%87%AA%E5%AE%9A%E4%B9%89view%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          android自定义view学习
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/05/04/android%E8%BF%9B%E9%98%B6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">android进阶</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    </div></section>
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-    
-
-    
-
-    
-
-    
 
     
 
@@ -405,10 +264,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
