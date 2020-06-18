@@ -6,16 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/zy666/zy666.github.io">
-  <title>Tag: 读取联系人 本地 | danny的博客</title>
+  <title>Handler常见面试题 | danny的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="danny的博客">
-<meta property="og:url" content="https://github.com/zy666/zy666.github.io/tags/%E8%AF%BB%E5%8F%96%E8%81%94%E7%B3%BB%E4%BA%BA-%E6%9C%AC%E5%9C%B0/index.html">
+  <meta name="description" content="1.Handler 的 post(Runnable) 与 sendMessage 有什么区别看一下 post(Runnable) 的源码实现如下：  实际上 post(Runnable) 会将 Runnable 赋值到 Message 的 callback 变量中 那么这个 Runnable 是在什么地方被执行的呢？ Looper 从 MessageQueue 中取出 Message 之后，会调用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Handler常见面试题">
+<meta property="og:url" content="https://github.com/zy666/zy666.github.io/2020/06/18/Handler%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
 <meta property="og:site_name" content="danny的博客">
+<meta property="og:description" content="1.Handler 的 post(Runnable) 与 sendMessage 有什么区别看一下 post(Runnable) 的源码实现如下：  实际上 post(Runnable) 会将 Runnable 赋值到 Message 的 callback 变量中 那么这个 Runnable 是在什么地方被执行的呢？ Looper 从 MessageQueue 中取出 Message 之后，会调用">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/8f0b8983gy1gfwa3n29xhj21180f6n0k.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/8f0b8983gy1gfwaaivizpj210q0pmn2x.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/8f0b8983gy1gfwahd5r9cj21nq0ow44f.jpg">
+<meta property="article:published_time" content="2020-06-18T03:53:05.000Z">
+<meta property="article:modified_time" content="2020-06-18T03:54:47.261Z">
 <meta property="article:author" content="Danny">
 <meta property="article:tag" content="生活">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/8f0b8983gy1gfwa3n29xhj21180f6n0k.jpg">
   
     <link rel="alternative" href="/atom.xml" title="danny的博客" type="application/atom+xml">
   
@@ -161,48 +169,105 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Handler常见面试题"
+         class="article article-type-post " itemscope
+         itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/22/Android-%E8%AF%BB%E5%8F%96%E6%89%8B%E6%9C%BA%E6%9C%AC%E5%9C%B0%E8%81%94%E7%B3%BB%E4%BA%BA/" class="archive-article-date">
-  	<time datetime="2016-11-22T07:52:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/22/Android-%E8%AF%BB%E5%8F%96%E6%89%8B%E6%9C%BA%E6%9C%AC%E5%9C%B0%E8%81%94%E7%B3%BB%E4%BA%BA/">Android-读取手机本地联系人</a>
+    <h1 class="article-title" itemprop="name">
+      Handler常见面试题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">读取联系人 本地</a>
-        		</li>
-      		
-		</ul>
-	</div>
+                
+                    <a href="/2020/06/18/Handler%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2020-06-18T03:53:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-18</time>
+</a>
+                
+            </header>
 
-          
+            <div align="center" class="post-count">
+                字数：1k字 | 预计阅读时长：4分钟
+            </div>
+
+            <!-- 文章访问量 -->
+            
+                <span class="archive-article-date">
+               阅读量:		<span id="busuanzi_value_page_pv"></span>
+              </span>
+            
+
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+                <h1 id="1-Handler-的-post-Runnable-与-sendMessage-有什么区别"><a href="#1-Handler-的-post-Runnable-与-sendMessage-有什么区别" class="headerlink" title="1.Handler 的 post(Runnable) 与 sendMessage 有什么区别"></a>1.Handler 的 post(Runnable) 与 sendMessage 有什么区别</h1><p>看一下 post(Runnable) 的源码实现如下：</p>
+<p><img src="http://ww1.sinaimg.cn/large/8f0b8983gy1gfwa3n29xhj21180f6n0k.jpg" alt="image"></p>
+<p><strong>实际上 post(Runnable) 会将 Runnable 赋值到 Message 的 callback 变量中</strong></p>
+<p>那么这个 Runnable 是在什么地方被执行的呢？</p>
+<p>Looper 从 MessageQueue 中取出 Message 之后，会调用 dispatchMessage 方法进行处理，再看下其实现：</p>
+<p><img src="http://ww1.sinaimg.cn/large/8f0b8983gy1gfwaaivizpj210q0pmn2x.jpg" alt="image"></p>
+<p>可以看出，dispatchMessage 分两种情况：</p>
+<ol>
+<li><p>如果 Message 的 Callback 不为 null，一般为通过 post(Runnabl) 方式，会直接执行 Runnable 的 run 方法。因此这里的 Runnable 实际上就是一个回调接口，跟线程 Thread 没有任何关系。</p>
+</li>
+<li><p>如果 Message 的 Callback 为 null，这种一般为 sendMessage 的方式，则会调用 Handler 的 hanlerMessage 方法进行处理。</p>
+</li>
+</ol>
+<h1 id="2-Looper-loop-为什么不会阻塞主线程"><a href="#2-Looper-loop-为什么不会阻塞主线程" class="headerlink" title="2.Looper.loop() 为什么不会阻塞主线程"></a>2.Looper.loop() 为什么不会阻塞主线程</h1><p>刚才我们了解了，Looper 中的 loop 方法实际上是一个死循环。但是我们的 UI 线程却并没有被阻塞，反而还能够进行各种手势操作，这是为什么呢？在 MessageQueue 的 next 方法中，有如下一段代码：</p>
+<p><img src="http://ww1.sinaimg.cn/large/8f0b8983gy1gfwahd5r9cj21nq0ow44f.jpg" alt="image"></p>
+<p>nativePollOnce 方法是一个 native 方法，当调用此 native 方法时，主线程会释放 CPU 资源进入休眠状态，直到下条消息到达或者有事务发生，通过往 pipe 管道写端写入数据来唤醒主线程工作，这里采用的 epoll 机制。关于 nativePollOnce 的详细分析可以参考：<a href="https://www.kancloud.cn/alex_wsc/android-deep2/413394" target="_blank" rel="noopener">nativePollOnce函数分析</a>。</p>
+<h1 id="3-Handler-的-sendMessageDelayed-或者-postDelayed-是如何实现的"><a href="#3-Handler-的-sendMessageDelayed-或者-postDelayed-是如何实现的" class="headerlink" title="3. Handler 的 sendMessageDelayed 或者 postDelayed 是如何实现的"></a>3. Handler 的 sendMessageDelayed 或者 postDelayed 是如何实现的</h1><p>在向 MessageQueue 队列中插入 Message 时，会根据 Message 的执行时间排序。而消息的延时处理的核心实现是在获取 Message 的阶段，接下来看下 MessageQueue 的 next 方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">Message next() &#123;</span><br><span class="line">    &#x2F;&#x2F;...</span><br><span class="line">    for (;;) &#123;</span><br><span class="line">        &#x2F;&#x2F;...</span><br><span class="line">        nativePollOnce(ptr, nextPollTimeoutMillis);</span><br><span class="line">        synchronized (this) &#123;</span><br><span class="line">            &#x2F;&#x2F;...</span><br><span class="line">            if (msg !&#x3D; null) &#123;</span><br><span class="line">            </span><br><span class="line">                &#x2F;&#x2F;1. MessageQueue 中取出一个 Message，但是当前的系统时间小于 Message.when，因此会计算一个 timeout</span><br><span class="line">                </span><br><span class="line">                if (now &lt; msg.when) &#123;</span><br><span class="line">                    &#x2F;&#x2F; Next message is not ready.  Set a timeout to wake up when it is ready.</span><br><span class="line">                    nextPollTimeoutMillis &#x3D; (int) Math.min(msg.when - now, Integer.MAX_VALUE);</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    &#x2F;&#x2F; Got a message.</span><br><span class="line">                    mBlocked &#x3D; false;</span><br><span class="line">                    if (prevMsg !&#x3D; null) &#123;</span><br><span class="line">                        prevMsg.next &#x3D; msg.next;</span><br><span class="line">                    &#125; else &#123;</span><br><span class="line">                        mMessages &#x3D; msg.next;</span><br><span class="line">                    &#125;</span><br><span class="line">                    msg.next &#x3D; null;</span><br><span class="line">                    if (DEBUG) Log.v(TAG, &quot;Returning message: &quot; + msg);</span><br><span class="line">                    msg.markInUse();</span><br><span class="line">                    return msg;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                &#x2F;&#x2F; No more messages.</span><br><span class="line">                nextPollTimeoutMillis &#x3D; -1;</span><br><span class="line">            &#125;</span><br><span class="line">            &#x2F;&#x2F;...</span><br><span class="line">        &#125;</span><br><span class="line">            &#x2F;&#x2F;...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>==图1注释==表示从 MessageQueue 中取出一个 Message，但是当前的系统时间小于 Message.when，因此会计算一个 timeout，目的是实现在 timeout 时间段后再将 UI 线程唤醒，因此后续处理 Message 的代码只会在 timeout 时间之后才会被 CPU 执行。</p>
+<blockquote>
+<p>注意：在上述代码中也能看出，如果当前系统时间大于或等于 Message.when，那么会返回 Message 给 Looper.loop()。但是这个逻辑只能保证在 when 之前消息不被处理，不能够保证一定在 when 时被处理。</p>
+</blockquote>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol>
+<li><p>应用启动是从 ActivityThread 的 main 开始的，先是执行了 Looper.prepare()，该方法先是 new 了一个 Looper 对象，在私有的构造方法中又创建了 MessageQueue 作为此 Looper 对象的成员变量，Looper 对象通过 ThreadLocal 绑定 MainThread 中；</p>
+</li>
+<li><p>当我们创建 Handler 子类对象时，在构造方法中通过 ThreadLocal 获取绑定的 Looper 对象，并获取此 Looper 对象的成员变量 MessageQueue 作为该 Handler 对象的成员变量；</p>
+</li>
+</ol>
+<ol start="3">
+<li>在子线程中调用上一步创建的 Handler 子类对象的 sendMesage(msg) 方法时，在该方法中将 msg 的 target 属性设置为自己本身，同时调用成员变量 MessageQueue 对象的 enqueueMessag() 方法将 msg 放入 MessageQueue 中；</li>
+</ol>
+<ol start="4">
+<li>主线程创建好之后，会执行 Looper.loop() 方法，该方法中获取与线程绑定的 Looper 对象，继而获取该 Looper 对象的成员变量 MessageQueue 对象，并开启一个会阻塞（不占用资源）的死循环，只要 MessageQueue 中有 msg，就会获取该 msg，并执行 msg.target.dispatchMessage(msg) 方法（msg.target 即上一步引用的 handler 对象），此方法中调用了我们第二步创建 handler 子类对象时覆写的 handleMessage() 方法。</li>
+</ol>
+
+            
+
+            
+                <div class="page-reward">
+                    <a href="javascript:;" class="page-reward-btn tooltip-top">
+                        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+                            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                              class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                      
+                      
+                  </div>
+                </span>
+              </span>
+            </span>
+                        </div>
+                    </a>
+                </div>
+            
+        </div>
+        <div class="article-info article-info-index">
+            
+            
+            
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -214,20 +279,111 @@
         		<li class="article-tag-list-item">
         			<a href="/categories/技术/Android//" class="article-tag-list-link color3">Android</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术/Android/Handler//" class="article-tag-list-link color3">Handler</a>
+        		</li>
       		
 		</ul>
 	</div>
 
 
+            
+
+            
+                
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
   </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/zy666/zy666.github.io/2020/06/18/Handler%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+            
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </article>
+
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/06/18/15-%E5%88%86%E9%92%9F%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1-Handler/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">15 分钟彻底掌握 Handler</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -264,9 +420,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
